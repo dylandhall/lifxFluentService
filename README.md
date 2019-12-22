@@ -1,4 +1,4 @@
-# lifxFluentService
+# Lifx service to update lights on a schedule, plus a fluent wrapper for the states update API
 Fluent wrapper for lifx state updates, plus small script I use to make my lights adjust according to a schedule via AWS.
 
 I would like to credit https://github.com/mensly/LifxHttpNet project for the lifxColor class I used. The fork at https://github.com/caleblanchard/LifxHttpNet is probably easiest to use if you want an API and there's a nuget.
