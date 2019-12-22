@@ -5,7 +5,7 @@ I would like to credit https://github.com/mensly/LifxHttpNet project for the lif
 
 I would have used that library but I needed to  be able to change colour without affecting the power state, plus run a number of updates with one call, neither of which were possible with the original library. Plus I really like Fluent API libraries to work with.
 
-The waypoints for lights are contained in the TimeConfig.cs, change according to preference.
+The waypoints for lights are contained in the `TimeConfig.cs`, change according to preference.
 
 The environment variables you'll need to set on AWS are:
 
@@ -13,7 +13,7 @@ The environment variables you'll need to set on AWS are:
 - DaynightLights: comma seperated list of lights you want to set via kelvin, by label.
 - FullColourLights: comma seperated list of lights you want to set by colour, by label.
 - TimezoneId: the full text timezone ID, in AWS these are linux so in the format "Australia/Sydney" - if you run on a windows machine this will need to look more like "AUS Eastern Standard Time".
-- ChangeDuration: option, defaults to 10 minutes. integer of number of seconds.
+- ChangeDuration: optional, defaults to 10 minutes. integer of number of seconds.
 
 I can fork and add the fluent interface if anyone is interested, or add some functions and publish it as a standalone nuget.
 
