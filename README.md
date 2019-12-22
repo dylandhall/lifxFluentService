@@ -25,4 +25,4 @@ Currently my lights are happily updating from the cloud however so I'm likely to
 
 To create a package to upload, use `dotnet lambda package` command line argument. You'll need to install the AWS command line tools, see here: https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html
 
-I haven't worked with AWS before so I didn't set anything up that was particularly complex, I just have the CloudEvents trigging a run every 15 minutes.
+I haven't worked with AWS before so I didn't set anything up that was particularly complex. Hopefully you can get it working easily.
