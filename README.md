@@ -8,3 +8,7 @@ I would have used that library but I needed to  be able to change colour without
 I can fork and add the fluent interface if anyone is interested, or add some functions and publish it as a standalone nuget.
 
 Currently my lights are happily updating from the cloud however so I'm likely to leave this as is.
+
+To create a package to upload, use `dotnet lambda package` command line argument. You'll need to install the AWS command line tools, see here: https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html
+
+I haven't worked with AWS before so I didn't set anything up that was particularly complex, I just have the CloudEvents trigging a run every 15 minutes.
