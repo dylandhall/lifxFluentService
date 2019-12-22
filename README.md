@@ -7,13 +7,17 @@ I would have used that library but I needed to  be able to change colour without
 
 The waypoints for lights are contained in the `TimeConfig.cs`, change according to preference.
 
+If you just want to use as-is there's an example package you can upload immediately in the `packaged` folder, you can upload and start using it immediately.
+
 The environment variables you'll need to set on AWS are:
 
--  LifxApiToken: your token
+- LifxApiToken: your token
 - DaynightLights: comma seperated list of lights you want to set via kelvin, by label.
 - FullColourLights: comma seperated list of lights you want to set by colour, by label.
 - TimezoneId: the full text timezone ID, in AWS these are linux so in the format "Australia/Sydney" - if you run on a windows machine this will need to look more like "AUS Eastern Standard Time".
 - ChangeDuration: optional, defaults to 10 minutes. integer of number of seconds.
+
+You'll need to trigger it to run, CloudWatch event trigger can trigger it according to whatever schedule you'd like. I chose every 15 minutes, which is a cron job with a statement like this: `cron(0/15 * * * ? *)`.
 
 I can fork and add the fluent interface if anyone is interested, or add some functions and publish it as a standalone nuget.
 
